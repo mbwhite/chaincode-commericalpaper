@@ -200,7 +200,7 @@ For example
 	 */
 	async uknownFn(api){
 		console.log("Big Friendly letters ->>> DON\'T PANIC")
-    throw new Error('Big Friendly letters ->>> DON\'T PANIC')
+        throw new Error('Big Friendly letters ->>> DON\'T PANIC')
 	}
 
 ```
@@ -264,6 +264,9 @@ The context object contains
 - `collections` - Providers a `getCollection` method. This returns a collection object, that provides get/set style methods.  Passing a empty string, or no argument will give back a collection based on the worldstate. Passing a string parameter gives a collection based on the private collection of the same name.
 - `txContext` - Provides functions based on the tx context.
 
+### Extending the transaction context
+
+Before the transaction context is updated. 
 
 #### txContext
 
